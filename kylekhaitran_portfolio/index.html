@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kyle Khai Tran - Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
+    <meta name="theme-color" content="#09090B" />
+    <link rel="stylesheet" href="/kylekhaitran_portfolio/assets/styles.css" />
+    <style>
+      /* Parallax scrolling effect */
+      .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section-overlay {
+        background-color: rgba(9, 9, 12, 0.8);
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body
+    class="font-rubik selection:bg-foreground/30 flex min-h-screen w-full cursor-default flex-col items-center justify-start antialiased bg-background"
+  >
+    <!-- Navigation -->
+    <div
+      class="fixed top-0 z-50 flex w-full flex-col items-center justify-center border-b px-6 bg-background/90 backdrop-blur-sm"
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r border-l">
+        <div
+          class="w-full flex-col border-b-0 p-8 flex space-y-0 overflow-x-auto py-0"
+        >
+          <nav
+            class="flex-row justify-center space-y-0 space-x-8 border-b-0 py-4"
+          >
+            <a
+              class="text-foreground/70 hover:text-foreground transition-colors"
+              href="index.html"
+              >home</a
+            >
+            <a
+              class="text-foreground/70 hover:text-foreground transition-colors"
+              href="projects.html"
+              >projects</a
+            >
+            <a
+              class="text-foreground/70 hover:text-foreground transition-colors"
+              href="other-fun.html"
+              >other & fun</a
+            >
+            <a
+              href="/kylekhaitran_portfolio/assets/Kyle_Tran_Resume.pdf"
+              target="_blank"
+              class="resume-link ml-auto text-foreground/70 hover:text-foreground transition-colors border border-foreground/30 px-3 py-1 rounded-md hover:border-foreground"
+            >
+              resume
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div
+      class="parallax-section mt-20 w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.8),
+          rgba(9, 9, 12, 0.8)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r px-8 py-12">
+        <div class="flex flex-col space-y-4">
+          <h1 class="hero-title text-foreground font-medium">Kyle Khai Tran</h1>
+          <h3 class="hero-sub text-foreground/70 font-medium">
+            software techie // currently QA in test
+          </h3>
+          <p class="text-foreground text-base max-w-4xl">
+            Welcome to my portfolio. Welcome to my portfolio. Welcome to my
+            portfolio. Welcome to my portfolio. Welcome to my portfolio. Welcome
+            to my portfolio. Welcome to my portfolio. Welcome to my portfolio.
+            Welcome to my portfolio. Welcome to my portfolio. Welcome to my
+            portfolio. Welcome to my portfolio. Welcome to my portfolio. Welcome
+            to my portfolio. Welcome to my portfolio. Welcome to my portfolio.
+            Welcome to my portfolio. Welcome to my portfolio. Welcome to my
+            portfolio. Welcome to my portfolio. Welcome to my portfolio. Welcome
+            to my portfolio. Welcome to my portfolio. Welcome to my portfolio.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div
+      class="parallax-section w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.9),
+          rgba(9, 9, 12, 0.9)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r px-8 py-16">
+        <h2 class="text-foreground text-2xl font-medium mb-6">About Me</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="text-foreground/70">
+            <p class="mb-4">
+              As a QA professional with a background in software development, I
+              bridge the gap between technical precision and creative
+              problem-solving. My approach combines systematic testing
+              methodologies with an innovative mindset.
+            </p>
+            <p>
+              Beyond work, I'm an avid learner who enjoys exploring emerging
+              technologies, contributing to open-source projects, and staying at
+              the forefront of tech innovations.
+            </p>
+          </div>
+          <div class="text-foreground/70">
+            <h3 class="text-foreground text-lg mb-4">Personal Interests</h3>
+            <ul class="list-disc pl-5 space-y-2">
+              <li>Machine Learning & AI</li>
+              <li>Cloud Infrastructure</li>
+              <li>Automation Technologies</li>
+              <li>Open-Source Contributions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div
+      class="parallax-section w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.9),
+          rgba(9, 9, 12, 0.9)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r px-8 py-16">
+        <h2 class="text-foreground text-2xl font-medium mb-6">Skills</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-foreground text-lg mb-4">QA & Testing</h3>
+            <ul class="text-foreground/70 space-y-2">
+              <li>Selenium</li>
+              <li>Cypress</li>
+              <li>JUnit</li>
+              <li>TestNG</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-foreground text-lg mb-4">Programming</h3>
+            <ul class="text-foreground/70 space-y-2">
+              <li>Java</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-foreground text-lg mb-4">Tools & Platforms</h3>
+            <ul class="text-foreground/70 space-y-2">
+              <li>Jenkins</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>JIRA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div
+      class="parallax-section w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.9),
+          rgba(9, 9, 12, 0.9)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r border-l px-12 py-16">
+        <h2 class="text-foreground text-2xl font-medium mb-6">Contact</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div>
+            <h3 class="text-foreground text-lg mb-4">Let's Connect</h3>
+            <p class="text-foreground/70 mb-4">
+              I'm always open to discussing new opportunities, technologies, or
+              potential collaborations.
+            </p>
+            <div class="space-y-2">
+              <p class="text-foreground/70">
+                <strong class="text-foreground">Email:</strong>
+                <a href="mailto:kylekhai04@gmail.com" class="hover:underline"
+                  >kylekhai04@gmail.com</a
+                >
+              </p>
+              <p class="text-foreground/70">
+                <strong class="text-foreground">LinkedIn:</strong>
+                <a
+                  href="https://linkedin.com/in/kylekhaitran"
+                  target="_blank"
+                  class="hover:underline"
+                  >/in/kylekhaitran</a
+                >
+              </p>
+              <p class="text-foreground/70">
+                <strong class="text-foreground">GitHub:</strong>
+                <a
+                  href="https://github.com/KYLEKHAI"
+                  target="_blank"
+                  class="hover:underline"
+                  >KYLEKHAI</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div
+      class="flex w-full flex-grow flex-col items-center justify-start px-6 bg-secondary/20"
+    >
+      <div
+        class="flex h-full w-full max-w-3xl flex-grow items-start justify-center border-r border-l py-3 md:py-6 lg:py-10"
+      >
+        <div
+          class="flex w-full flex-col items-center justify-center space-y-2 px-2 py-4 md:py-0"
+        >
+          <p class="text-foreground/50 text-center text-xs">
+            © Copyright Kyle Khai Tran 2025. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
