@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kylekhai.com - other-fun</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" sizes="16x16" />
+    <meta name="theme-color" content="#09090B" />
+    <link rel="stylesheet" href="/kylekhaitran_portfolio/assets/styles.css" />
+    <script src="/kylekhaitran_portfolio/src/scripts.js" defer></script>
+    <style>
+      /* Parallax scrolling effect */
+      .parallax-section {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .section-overlay {
+        background-color: rgba(9, 9, 12, 0.8);
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body
+    id="top"
+    class="font-rubik selection:bg-foreground/30 flex min-h-screen w-full cursor-default flex-col items-center justify-start antialiased bg-background"
+  >
+    <!-- Navigation -->
+    <div
+      class="fixed top-0 z-50 flex w-full flex-col items-center justify-center border-b px-6 bg-background/90 backdrop-blur-sm"
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r border-l">
+        <div
+          class="w-full flex-col border-b-0 p-8 flex space-y-0 overflow-x-auto py-0"
+        >
+          <div class="fixed-navbar">
+            <div class="navbar-container">
+              <nav
+                class="flex-row justify-center space-y-0 space-x-8 border-b-0 py-4"
+              >
+                <a
+                  class="text-foreground/70 hover:text-foreground transition-colors"
+                  target="_blank"
+                  href="index.html"
+                  >home</a
+                >
+                <a
+                  class="text-foreground/70 hover:text-foreground transition-colors"
+                  target="_blank"
+                  href="projects.html"
+                  >projects</a
+                >
+                <a
+                  class="text-foreground/70 hover:text-foreground transition-colors"
+                  href="#top"
+                  >other & fun</a
+                >
+                <a
+                  href="/kylekhaitran_portfolio/assets/Kyle_Tran_Resume.pdf"
+                  target="_blank"
+                  class="resume-link ml-auto text-foreground/70 hover:text-foreground transition-colors border border-foreground/30 px-3 py-1 rounded-md hover:border-foreground"
+                >
+                  resume
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div
+      class="parallax-section mt-20 w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.8),
+          rgba(9, 9, 12, 0.8)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r px-8 py-12">
+        <div class="flex flex-col space-y-4">
+          <h1 class="hero-title text-foreground font-medium">other-fun</h1>
+          <h3 class="hero-sub text-foreground/70 font-medium">
+            other stuff in my life + fun stuff
+          </h3>
+          <p class="text-foreground text-base max-w-4xl">hi</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Art Gallery -->
+    <div
+      class="parallax-section w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.9),
+          rgba(9, 9, 12, 0.9)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r px-8 py-16">
+        <h2 class="text-foreground text-2xl font-medium mb-6">Art Gallery</h2>
+        <h3 class="text-foreground/70 text-lg mb-8">some art that i like</h3>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-1.png"
+                alt="Blue Reflection Second Light Day Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Day Scenery</h4>
+              <p class="text-foreground/70 text-sm">
+                Blue Reflection Second Light
+              </p>
+            </div>
+          </div>
+
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-2.png"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Night Scenery</h4>
+              <p class="text-foreground/70 text-sm">
+                Blue Reflection Second Light
+              </p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-3.png"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Over The Bridge</h4>
+              <p class="text-foreground/70 text-sm">
+                Star Ocean The First Departure R
+              </p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-4.png"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Campsite Rest</h4>
+              <p class="text-foreground/70 text-sm">YS 8: Lacrimosa of Dana</p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-5.png"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Tarnished</h4>
+              <p class="text-foreground/70 text-sm">Elden Ring</p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-6.png"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Town Balcony</h4>
+              <p class="text-foreground/70 text-sm">
+                The Legend of Heroes: Trails in the Sky
+              </p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-7.png"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">
+                Sinnoh Cherry Blossoms
+              </h4>
+              <p class="text-foreground/70 text-sm">
+                Pokemon Fan Made ROM Hack
+              </p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-8.jpg"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Monkey World</h4>
+              <p class="text-foreground/70 text-sm">Super Monkey Ball</p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-9.png"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Jellyfish Fields</h4>
+              <p class="text-foreground/70 text-sm">Spongebob Squarepants</p>
+            </div>
+          </div>
+          <div class="art-frame group">
+            <div
+              class="relative overflow-hidden rounded-lg shadow-lg border border-foreground/10"
+            >
+              <img
+                src="assets/imgs/art-piece-10.jpg"
+                alt="Blue Reflection Second Light Night Scenery"
+                class="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+              <div
+                class="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-opacity duration-300"
+              ></div>
+            </div>
+            <div class="mt-4 text-center">
+              <h4 class="text-foreground font-medium mb-2">Fall Leaves</h4>
+              <p class="text-foreground/70 text-sm">Maplestory</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

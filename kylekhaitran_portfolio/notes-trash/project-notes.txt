@@ -1,0 +1,4 @@
+THINGS TO ADD:
+
+- Light/dark mode toggle
+- Colors
