@@ -2,3 +2,7 @@ THINGS TO ADD:
 
 - Light/dark mode toggle
 - Colors
+- Embed leetcode profile /// github stats
+
+DEBUG // CLEAN
+- Art gallery alt tags

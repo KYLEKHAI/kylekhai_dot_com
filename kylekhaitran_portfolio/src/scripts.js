@@ -45,3 +45,34 @@ function copyEmail() {
     document.body.removeChild(notification);
   }, 2500);
 }
+
+// Allows modal to be opened and closed for experience section
+function openModal(index) {
+  document.getElementById(`modal-${index}`).classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(index) {
+  document.getElementById(`modal-${index}`).classList.remove("active");
+  document.body.style.overflow = "auto";
+}
+
+document.addEventListener("click", function (event) {
+  const modals = document.querySelectorAll(".experience-modal.active");
+  modals.forEach((modal) => {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+      document.body.style.overflow = "auto";
+    }
+  });
+});
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    const modals = document.querySelectorAll(".experience-modal.active");
+    modals.forEach((modal) => {
+      modal.classList.remove("active");
+      document.body.style.overflow = "auto";
+    });
+  }
+});

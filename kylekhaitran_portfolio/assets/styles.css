@@ -1377,13 +1377,264 @@ body {
   margin-bottom: 20px;
 }
 
+/* EXPERIENCE */
+.experience-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.experience-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+  position: relative;
+}
+
+.experience-items::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--secondary);
+  z-index: 0;
+}
+
+.experience-items::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  height: 2px;
+  width: 30px;
+  background-color: var(--secondary);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.experience-items::before:last-of-type {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -40px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid var(--secondary);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.experience-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(65% - 450px - 12px);
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid var(--secondary);
+  transform: translateY(-8px);
+  z-index: 2;
+}
+
+.experience-item {
+  width: 28%;
+  min-width: 200px;
+  padding: 15px;
+  border-radius: 6px;
+  background: var(--background);
+  border: 1px solid var(--secondary);
+  text-align: center;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+.experience-item:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.experience-company {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.experience-job {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin-bottom: 3px;
+}
+
+.experience-year {
+  font-size: 0.8rem;
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.experience-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.experience-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.experience-modal-content {
+  max-width: 600px;
+  width: 90%;
+  background-color: var(--background);
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  padding: 25px;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.experience-modal.active .experience-modal-content {
+  transform: translateY(0);
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-close:before,
+.modal-close:after {
+  position: absolute;
+  left: 12px;
+  content: " ";
+  height: 24px;
+  width: 2px;
+  background-color: var(--foreground);
+}
+
+.modal-close:before {
+  transform: rotate(45deg);
+}
+
+.modal-close:after {
+  transform: rotate(-45deg);
+}
+
+.experience-content h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--foreground);
+  font-size: 1.2rem;
+}
+
+.experience-date {
+  font-size: 0.9rem;
+  color: var(--foreground);
+  opacity: 0.7;
+  margin-bottom: 15px;
+}
+
+.experience-content ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.experience-content ul li {
+  color: var(--foreground);
+  opacity: 0.8;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 900px) {
+  .experience-items {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .experience-items::before {
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    right: auto;
+    width: 2px;
+    height: 100%;
+  }
+
+  .experience-items::after {
+    display: none;
+  }
+
+  .experience-container::after {
+    display: none;
+  }
+
+  .experience-item {
+    width: 80%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .experience-item {
+    width: 90%;
+  }
+
+  .experience-modal-content {
+    width: 85%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
 /* CONTACT */
 
 /* OTHER FUN */
 
 /* ART GALLERY */
 .art-frame {
-  margin-right: 15px; /* Add space between images side by side */
+  margin-right: 15px;
   margin-bottom: 16px;
 }
 
