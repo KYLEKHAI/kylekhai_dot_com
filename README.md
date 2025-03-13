@@ -17,3 +17,7 @@
 ![2025-03-13-i](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-13-i.png)
 
 ![2025-03-13-ii](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-13-ii.png)
+
+bonus easter egg
+
+![2025-03-13-iii](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-13-iii.png)
