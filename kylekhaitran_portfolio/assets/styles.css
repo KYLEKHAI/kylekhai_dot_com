@@ -1377,7 +1377,103 @@ body {
   margin-bottom: 20px;
 }
 
+/* ABOUT ME */
+
+#real-time {
+  background-color: #000000;
+  padding: 2px;
+  border: dotted 2px #ffffff;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 1.1em;
+  display: inline-block;
+  color: #ffffff;
+  margin: 3px;
+}
+
+.about-me-container {
+  gap: 4em;
+  margin-top: 20px;
+}
+
+.about-me-links:hover {
+  text-decoration: underline;
+}
+
+/* SKILLS */
+.skills-container {
+  margin-top: 20px;
+}
+.skills-card {
+  transition: all 0.3s ease;
+  background-color: rgba(9, 9, 12, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+}
+
+#card-tools-platforms {
+  margin-right: 20px;
+}
+
+.skills-card:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill-bullet {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.skills-sub {
+  margin-top: 20px;
+}
+.skill-tag {
+  background-color: rgba(9, 9, 12, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  padding: 0.25rem 1rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  margin: 0.25rem;
+  transition: all 0.2s ease;
+}
+
+.skill-tag:hover {
+  background-color: rgba(9, 9, 12, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.skill-icon {
+  margin-right: 0.75rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.skills-category-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.leetcode-stats {
+  margin-top: 20px;
+}
+
 /* EXPERIENCE */
+.experience-container-header {
+  margin-top: 5px;
+}
+
 .experience-container {
   max-width: 100%;
   margin: 0 auto;
@@ -1465,8 +1561,8 @@ body {
 }
 
 .experience-item:hover {
-  border-color: var(--accent);
-  transform: translateY(-3px);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -1629,7 +1725,9 @@ body {
 }
 
 /* CONTACT */
-
+.contact-sub-title {
+  margin-top: 5px;
+}
 /* OTHER FUN */
 
 /* ART GALLERY */

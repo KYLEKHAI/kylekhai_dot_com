@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Allows real-time to be displayed in about section
+function updateTime() {
+  const now = new Date();
+  const formattedTime = now.toLocaleString();
+  document.getElementById("real-time").textContent = formattedTime;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
+
 // Allows email to be copied and notification to appear
 function copyEmail() {
   const email = "kylekhai04@gmail.com";

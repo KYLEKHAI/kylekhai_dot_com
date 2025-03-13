@@ -118,73 +118,57 @@
     >
       <div class="flex w-full max-w-3xl flex-col border-r px-8 py-16">
         <h2 class="text-foreground text-2xl font-medium mb-6">About Me</h2>
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="about-me-container grid md:grid-cols-2">
           <div class="text-foreground/70">
+            <h3 class="text-foreground text-lg mb-4">Who am I?</h3>
             <p class="mb-4">
-              As a QA professional with a background in software development, I
-              bridge the gap between technical precision and creative
-              problem-solving. My approach combines systematic testing
-              methodologies with an innovative mindset.
+              Hi! I'm Kyle, a third-year Computer Science undergraduate at the
+              University of Ottawa. I love to learn and have a strong drive to
+              thrive in the tech industry, hoping to meet others who share the
+              same feeling as me. I enjoy working in every stage of software
+              development, from brainstorming ideas to building, implementing,
+              and testing solutions.
             </p>
-            <p>
-              Beyond work, I'm an avid learner who enjoys exploring emerging
-              technologies, contributing to open-source projects, and staying at
-              the forefront of tech innovations.
-            </p>
+            <br />
           </div>
           <div class="text-foreground/70">
-            <h3 class="text-foreground text-lg mb-4">Personal Interests</h3>
+            <h3 class="text-foreground text-lg mb-4">
+              Personal Interests in Tech
+            </h3>
             <ul class="list-disc pl-5 space-y-2">
-              <li>Machine Learning & AI</li>
-              <li>Cloud Infrastructure</li>
-              <li>Automation Technologies</li>
-              <li>Open-Source Contributions</li>
+              <li>Software developement and testing</li>
+              <li>Automation technologies and LLMs</li>
+              <li>Web3 & Blockchain infrastructure</li>
+              <li>Third-Party software & tools created by communities!</li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-
-    <!-- Skills Section -->
-    <div
-      class="parallax-section w-full px-6"
-      style="
-        background-image: linear-gradient(
-          rgba(9, 9, 12, 0.9),
-          rgba(9, 9, 12, 0.9)
-        );
-      "
-    >
-      <div class="flex w-full max-w-3xl flex-col border-r px-8 py-16">
-        <h2 class="text-foreground text-2xl font-medium mb-6">Skills</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-          <div>
-            <h3 class="text-foreground text-lg mb-4">QA & Testing</h3>
-            <ul class="text-foreground/70 space-y-2">
-              <li>Selenium</li>
-              <li>Cypress</li>
-              <li>JUnit</li>
-              <li>TestNG</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-foreground text-lg mb-4">Programming</h3>
-            <ul class="text-foreground/70 space-y-2">
-              <li>Java</li>
-              <li>Python</li>
-              <li>JavaScript</li>
-              <li>SQL</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-foreground text-lg mb-4">Tools & Platforms</h3>
-            <ul class="text-foreground/70 space-y-2">
-              <li>Jenkins</li>
-              <li>Docker</li>
-              <li>Git</li>
-              <li>JIRA</li>
-            </ul>
-          </div>
+        <div class="text-foreground/70">
+          <p>
+            As of <span id="real-time"></span> I am testing software at JSI
+            Telecom as a QA Tester. Continuing my journey in tech, I hope to
+            explore other fields and hone my skills. (•ᴗ•)
+          </p>
+          <br />
+          <p>
+            Beyond work, I am passionate about many things such as spending
+            nights gaming to making intrumentals! Learn more about me by
+            checking out my
+            <a
+              href="projects.html"
+              class="about-me-links text-foreground hover:text-foreground/70 transition-colors"
+              target="_blank"
+              >projects</a
+            >
+            and
+            <a
+              href="other-fun.html"
+              class="about-me-links text-foreground hover:text-foreground/70 transition-colors"
+              target="_blank"
+              >other fun</a
+            >
+            stuff!
+          </p>
         </div>
       </div>
     </div>
@@ -201,7 +185,7 @@
     >
       <div class="flex w-full max-w-3xl flex-col border-r px-8 py-16">
         <h2 class="text-foreground text-2xl font-medium mb-6">Experience</h2>
-        <p class="text-foreground/70 mb-4">
+        <p class="experience-container-header text-foreground/70 mb-4">
           My roadmap in the industry! Here are my roles in the places I've
           worked at:
         </p>
@@ -301,6 +285,217 @@
       </div>
     </div>
 
+    <!-- Skills Section -->
+    <div
+      class="parallax-section w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.9),
+          rgba(9, 9, 12, 0.9)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r px-8 py-16">
+        <h2 class="text-foreground text-2xl font-medium mb-8">
+          Skills & Technologies
+        </h2>
+        <div class="contact-sub-title space-y-4">
+          <p class="text-foreground/70 mb-4">
+            Here are some of my favorite tools and platforms that I've worked
+            with along with some skills I've gained over the years:
+          </p>
+        </div>
+
+        <div class="skills-container">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="skills-card">
+              <div class="skills-category-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-icon"
+                >
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <h3>QA & Testing</h3>
+              </div>
+              <ul class="text-foreground/70 space-y-3">
+                <li><span class="skill-bullet"></span>Postman</li>
+                <li><span class="skill-bullet"></span>Selenium</li>
+                <li><span class="skill-bullet"></span>Chrome DevTools</li>
+                <li><span class="skill-bullet"></span>Playwright</li>
+                <li><span class="skill-bullet"></span>Mocha & Chai</li>
+                <li><span class="skill-bullet"></span>JUnit</li>
+                <li><span class="skill-bullet"></span>TestRail</li>
+                <li><span class="skill-bullet"></span>TestComplete</li>
+                <li><span class="skill-bullet"></span>Debugging</li>
+                <li><span class="skill-bullet"></span>Documentation</li>
+                <li><span class="skill-bullet"></span>Testing methods</li>
+                <li><span class="skill-bullet"></span>BDD & TDD</li>
+              </ul>
+            </div>
+
+            <div class="skills-card">
+              <div class="skills-category-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-icon"
+                >
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <h3>Programming</h3>
+              </div>
+              <ul class="text-foreground/70 space-y-3">
+                <li><span class="skill-bullet"></span>Java</li>
+                <li><span class="skill-bullet"></span>Python</li>
+                <li><span class="skill-bullet"></span>JavaScript</li>
+                <li><span class="skill-bullet"></span>SQL/PostgreSQL</li>
+                <li><span class="skill-bullet"></span>C/C#</li>
+                <li><span class="skill-bullet"></span>TypeScript</li>
+                <li><span class="skill-bullet"></span>HTML/CSS</li>
+                <li><span class="skill-bullet"></span>Spring Boot</li>
+                <li><span class="skill-bullet"></span>React</li>
+                <li><span class="skill-bullet"></span>Flutter</li>
+              </ul>
+            </div>
+
+            <div class="skills-card" id="card-tools-platforms">
+              <div class="skills-category-title">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="skill-icon"
+                >
+                  <path
+                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"
+                  ></path>
+                </svg>
+                <h3>Tools & Platforms</h3>
+              </div>
+              <ul class="text-foreground/70 space-y-3">
+                <li><span class="skill-bullet"></span>Firebase</li>
+                <li><span class="skill-bullet"></span>Node.js</li>
+                <li><span class="skill-bullet"></span>Git</li>
+                <li><span class="skill-bullet"></span>Github</li>
+                <li><span class="skill-bullet"></span>Azure DevOps</li>
+                <li><span class="skill-bullet"></span>Android Studio</li>
+                <li><span class="skill-bullet"></span>MySQL/pgAdmin4</li>
+                <li><span class="skill-bullet"></span>Godot</li>
+                <li><span class="skill-bullet"></span>Figma</li>
+                <li><span class="skill-bullet"></span>VS Code</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skills-sub mt-8">
+            <h3 class="text-foreground text-lg font-medium mb-4">
+              Additional Technical Skills
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-tag">REST APIs</span>
+              <span class="skill-tag">DevOps & Agile</span>
+              <span class="skill-tag">Web & Mobile</span>
+            </div>
+          </div>
+
+          <div class="skills-sub mt-8">
+            <h3 class="text-foreground text-lg font-medium mb-4">
+              Other Skills & Certifications
+            </h3>
+            <div class="flex flex-wrap gap-3">
+              <span class="skill-tag">Accessibility WCAG Compliance</span>
+              <span class="skill-tag">French DELF B2</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Miscellaneous Section -->
+    <div
+      class="parallax-section w-full px-6"
+      style="
+        background-image: linear-gradient(
+          rgba(9, 9, 12, 0.9),
+          rgba(9, 9, 12, 0.9)
+        );
+      "
+    >
+      <div class="flex w-full max-w-3xl flex-col border-r px-12 py-16">
+        <h2 class="text-foreground text-2xl font-medium mb-6">Miscellaneous</h2>
+        <div class="contact-sub-title space-y-4">
+          <p class="text-foreground/70 mb-4">Additional info...</p>
+
+          <div class="github-stats mt-8">
+            <h3 class="text-foreground text-lg font-medium mb-4">
+              GitHub Activity
+            </h3>
+            <div class="text-foreground/70">
+              <p>My activity on Github:</p>
+            </div>
+            <div
+              class="rounded-lg p-4 bg-background/30 backdrop-blur-sm hover:border-foreground/50 transition-all"
+            >
+              <div class="flex justify-center">
+                <a href="https://github.com/KYLEKHAI" target="_blank">
+                  <img
+                    src="https://github-readme-stats.vercel.app/api?username=KYLEKHAI&show_icons=true&theme=catppuccin_mocha"
+                    alt="GitHub Stats"
+                    class="max-w-full h-auto rounded"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="leetcode-stats mt-8">
+            <h3 class="text-foreground text-lg font-medium mb-4">
+              LeetCode Activity
+            </h3>
+            <div class="text-foreground/70">
+              <p>Started practicing — here are my stats:</p>
+            </div>
+            <div
+              class="rounded-lg p-4 bg-background/30 backdrop-blur-sm hover:border-foreground/50 transition-all"
+            >
+              <div class="flex justify-center">
+                <a href="https://leetcode.com/u/kylekhai/" target="_blank">
+                  <img
+                    src="https://leetcard.jacoblin.cool/kylekhai?theme=catppuccinMocha&font=Basic&ext=heatmap"
+                    alt="LeetCode Stats"
+                    class="max-w-full h-auto rounded"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Contact Section -->
     <div
       class="parallax-section w-full px-6"
@@ -313,7 +508,7 @@
     >
       <div class="flex w-full max-w-3xl flex-col border-r px-12 py-16">
         <h2 class="text-foreground text-2xl font-medium mb-6">Contact</h2>
-        <div class="space-y-4">
+        <div class="contact-sub-title space-y-4">
           <p class="text-foreground/70 mb-4">
             Feel free to reach out for opportunities, questions or just to say
             hi! [Email address is preferred!]
