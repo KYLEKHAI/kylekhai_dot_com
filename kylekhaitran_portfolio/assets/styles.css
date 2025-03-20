@@ -1724,6 +1724,17 @@ body {
   }
 }
 
+.miscellaneous-title {
+  margin-top: 250px;
+}
+.github-stats {
+  margin-top: 40px;
+}
+
+.card-skill {
+  margin-top: 40px;
+}
+
 /* CONTACT */
 .contact-sub-title {
   margin-top: 5px;
@@ -1732,15 +1743,4 @@ body {
 .bongo-cat-div {
   margin-top: 20px;
   margin-bottom: 10px;
-}
-/* OTHER FUN */
-
-/* ART GALLERY */
-.art-frame {
-  margin-right: 15px;
-  margin-bottom: 16px;
-}
-
-.art-frame:last-child {
-  margin-right: 0;
 }
