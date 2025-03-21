@@ -21,3 +21,9 @@
 bonus easter egg
 
 ![2025-03-13-iii](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-13-iii.png)
+
+2025-03-20 -- added 90% finished projects.html (featured and all other projects) + seperate logic scripts for projects.html page + UI QOL tweaks
+
+![2025-03-20-i](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-20-i.png)
+
+![2025-03-20-ii](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-20-ii.png)
