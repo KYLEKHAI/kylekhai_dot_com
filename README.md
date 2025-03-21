@@ -2,6 +2,10 @@
 
 ## `currently in progress...`
 
+### Site status:
+
+![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
+
 ### update log
 
 2025-03-05 -- started creating portfolio, vision is complete, filling rough content
