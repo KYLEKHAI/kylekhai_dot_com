@@ -1744,3 +1744,250 @@ body {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
+/* PROJECTS */
+
+.parallax-section {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.section-overlay {
+  background-color: rgba(9, 9, 12, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+/* FEATURED */
+.project-showcase {
+  padding: 4rem 0;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-right: 20px;
+}
+
+.showcase-project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.305);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  backdrop-filter: blur(8px);
+}
+
+@media (min-width: 768px) {
+  .showcase-project {
+    flex-direction: row;
+  }
+}
+
+.showcase-image {
+  flex: 1;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+#fordward-home-img {
+  border-radius: 3rem;
+}
+
+#outtatown-home-img {
+  margin-bottom: 2rem;
+}
+.showcase-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.showcase-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.showcase-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.showcase-description {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.showcase-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.uottahack-div {
+  margin-top: 2rem;
+}
+
+/* SMALL PROJECTS */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-card {
+  background-color: rgba(0, 0, 0, 0.401);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.project-description {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tech-tag {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  background-color: rgba(9, 9, 12, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+.tech-tag:hover {
+  background-color: rgba(9, 9, 12, 0.4);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  font-size: 0.875rem;
+}
+
+.github-link-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#outtatown-tech {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo-link {
+  background-color: rgba(100, 100, 255, 0.2);
+}
+
+.project-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.demo-link:hover {
+  background-color: rgba(100, 100, 255, 0.3);
+}
+
+.demo-link {
+  background-color: white;
+  color: black;
+  font-weight: bolder;
+}
+
+.demo-link:hover {
+  background-color: #f0f0ff;
+}
+
+.footer-projects {
+  margin-top: 40px;
+}
+
+/* OTHER FUN */
+
+/* ART GALLERY */
+.art-frame {
+  margin-right: 15px;
+  margin-bottom: 16px;
+}
+
+.art-frame:last-child {
+  margin-right: 0;
+}
