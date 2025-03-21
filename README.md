@@ -2,7 +2,7 @@
 
 ## `currently in progress...`
 
-### Site status:
+### Site status: kylekhai-dot-com.vercel.app/
 
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
 
