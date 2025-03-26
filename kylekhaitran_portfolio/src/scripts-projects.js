@@ -139,4 +139,119 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   }
+
+  // Set array of images for each proj
+  const projectGalleries = {
+    fordward: [
+      "assets/imgs/project-imgs/fordward-img1.png",
+      "assets/imgs/project-imgs/fordward-img2.png",
+      "assets/imgs/project-imgs/fordward-img3.png",
+      "assets/imgs/project-imgs/fordward-img4.png",
+      "assets/imgs/project-imgs/fordward-img5.png",
+      "assets/imgs/project-imgs/fordward-img6.png",
+      "assets/imgs/project-imgs/fordward-img7.png",
+      "assets/imgs/project-imgs/fordward-img8.png",
+      "assets/imgs/project-imgs/fordward-img9.png",
+      "assets/imgs/project-imgs/fordward-img10.png",
+      "assets/imgs/project-imgs/fordward-img11.png",
+    ],
+    outtatown: [
+      "assets/imgs/project-imgs/outtatown-img1.png",
+      "assets/imgs/project-imgs/outtatown-img2.png",
+    ],
+  };
+
+  // Allows gallery modal to open and close
+  function openGalleryModal(project) {
+    const modal = document.getElementById("gallery-modal");
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+
+    const thumbnailsContainer = modal.querySelector(".gallery-thumbnails");
+    const mainImage = modal.querySelector(".gallery-main-image");
+
+    const images = projectGalleries[project] || [];
+
+    if (images.length > 0) {
+      mainImage.src = images[0];
+    }
+
+    thumbnailsContainer.innerHTML = "";
+
+    images.forEach((imageSrc, index) => {
+      const thumbnail = document.createElement("div");
+      thumbnail.classList.add("gallery-thumbnail");
+
+      const img = document.createElement("img");
+      img.src = imageSrc;
+      img.addEventListener("click", () => {
+        mainImage.src = imageSrc;
+
+        thumbnailsContainer
+          .querySelectorAll(".gallery-thumbnail")
+          .forEach((t) => t.classList.remove("active"));
+
+        thumbnail.classList.add("active");
+      });
+
+      thumbnail.appendChild(img);
+      thumbnailsContainer.appendChild(thumbnail);
+    });
+
+    if (thumbnailsContainer.firstChild) {
+      thumbnailsContainer.firstChild.classList.add("active");
+    }
+  }
+
+  function closeGalleryModal() {
+    const modal = document.getElementById("gallery-modal");
+    modal.classList.remove("active");
+    document.body.style.overflow = "auto";
+  }
+
+  // Create modal HTML
+  const galleryModal = document.createElement("div");
+  galleryModal.id = "gallery-modal";
+  galleryModal.classList.add("experience-modal", "gallery-modal");
+  galleryModal.innerHTML = `
+    <div class="experience-modal-content gallery-modal-content">
+      <div class="modal-close" onclick="closeGalleryModal()"></div>
+      <div class="experience-content gallery-content">
+        <img class="gallery-main-image" src="" alt="Gallery Image">
+        <div class="gallery-thumbnails"></div>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(galleryModal);
+
+  // Event listeners for gallery
+  document
+    .getElementById("fordward-gallery-id")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+      openGalleryModal("fordward");
+    });
+
+  document
+    .getElementById("outtatown-gallery-id")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+      openGalleryModal("outtatown");
+    });
+
+  // Clicking outside will close modal
+  document.addEventListener("click", function (event) {
+    const modal = document.getElementById("gallery-modal");
+    if (event.target === modal && modal.classList.contains("active")) {
+      closeGalleryModal();
+    }
+  });
+
+  // Close modal on esc key press
+  document.addEventListener("keydown", function (event) {
+    const modal = document.getElementById("gallery-modal");
+    if (event.key === "Escape" && modal.classList.contains("active")) {
+      closeGalleryModal();
+    }
+  });
 });

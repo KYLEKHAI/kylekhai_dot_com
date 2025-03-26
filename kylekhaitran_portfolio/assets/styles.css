@@ -1986,6 +1986,151 @@ body {
   margin-top: 40px;
 }
 
+/* GALLERY */
+.gallery-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gallery-modal-content {
+  max-width: 600px;
+  width: 90%;
+  background-color: var(--background);
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+  padding: 25px;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.gallery-modal.active .gallery-modal-content {
+  transform: translateY(0);
+}
+
+.gallery-modal .modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-modal .modal-close:hover {
+  opacity: 1;
+}
+
+.gallery-modal .modal-close:before,
+.gallery-modal .modal-close:after {
+  position: absolute;
+  left: 12px;
+  content: " ";
+  height: 24px;
+  width: 2px;
+  background-color: var(--foreground);
+}
+
+.gallery-modal .modal-close:before {
+  transform: rotate(45deg);
+}
+
+.gallery-modal .modal-close:after {
+  transform: rotate(-45deg);
+}
+
+.gallery-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-content h3 {
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: var(--foreground);
+  font-size: 1.2rem;
+}
+
+.gallery-main-image {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.gallery-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.gallery-thumbnail {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--secondary);
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.gallery-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.gallery-thumbnail.active,
+.gallery-thumbnail:hover {
+  opacity: 1;
+  border-color: var(--foreground);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-main-image {
+    height: 250px;
+  }
+
+  .gallery-modal-content {
+    width: 85%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+
+  .gallery-thumbnails {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .gallery-thumbnail {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 /* OTHER FUN */
 
 /* ART GALLERY */
