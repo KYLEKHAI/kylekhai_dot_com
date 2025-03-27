@@ -6,10 +6,10 @@
 
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
 
-### bugs in progress
+### Bugs in progress
 - mobile ui issues for projects page (elements out of containers, All Projects cards is cutoff and view gallery stops scroll when closed)
 
-### update log
+### Update log
 
 2025-03-05 -- started creating portfolio, vision is complete, filling rough content
 
