@@ -7,7 +7,7 @@
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
 
 ### bugs in progress
-- mobile ui issues for projects page (elements out of containers, All Projects cards and view gallery stops scroll when closed)
+- mobile ui issues for projects page (elements out of containers, All Projects cards is cutoff and view gallery stops scroll when closed)
 
 ### update log
 
