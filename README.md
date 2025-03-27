@@ -1,4 +1,4 @@
-# kylekhai_dot_com
+ # kylekhai_dot_com
 
 ## `currently in progress...`
 
@@ -7,7 +7,8 @@
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
 
 ### Bugs in progress
-- mobile ui issues for projects page (elements out of containers, All Projects cards is cutoff and view gallery stops scroll when closed)
+- View gallery stops scroll functionality when modal is closed)
+- mobile ui issues for projects page (elements out of containers and All Projects cards is cutoff)
 
 ### Update log
 
