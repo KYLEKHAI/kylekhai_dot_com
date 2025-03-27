@@ -206,7 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeGalleryModal() {
     const modal = document.getElementById("gallery-modal");
     modal.classList.remove("active");
-    document.body.style.overflow = "auto";
   }
 
   // Create modal HTML
@@ -238,6 +237,9 @@ document.addEventListener("DOMContentLoaded", function () {
       e.preventDefault();
       openGalleryModal("outtatown");
     });
+
+  const modalCloseButton = document.querySelector(".modal-close");
+  modalCloseButton.addEventListener("click", closeGalleryModal);
 
   // Clicking outside will close modal
   document.addEventListener("click", function (event) {
