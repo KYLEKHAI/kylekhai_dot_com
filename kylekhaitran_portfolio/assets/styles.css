@@ -1360,6 +1360,36 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .fixed-navbar {
+    position: static;
+  }
+
+  body {
+    padding-top: 0;
+  }
+
+  .fixed-navbar nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 0;
+  }
+
+  .navbar-linkers {
+    margin-left: 32px !important;
+  }
+
+  .resume-link {
+    margin-left: 0 !important;
+    margin-top: 5px;
+  }
+
+  .navbar-container {
+    padding: 1rem 0.5rem;
+  }
+}
+
 /* HERO */
 .parallax-section {
   min-height: 72vh;
@@ -1743,6 +1773,28 @@ body {
 .bongo-cat-div {
   margin-top: 20px;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .contact-sub-title .flex {
+    flex-direction: column;
+    align-items: center;
+    space-x-8: 0;
+    gap: 15px;
+  }
+
+  .contact-sub-title .flex > div,
+  .contact-sub-title .flex > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  .gitpoop {
+    margin-right: 33px;
+  }
 }
 
 /* PROJECTS */
