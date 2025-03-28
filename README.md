@@ -1,4 +1,4 @@
-# kylekhai_dot_com
+ # kylekhai_dot_com
 
 ## `currently in progress...`
 
@@ -6,7 +6,11 @@
 
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
 
-### update log
+### Bugs in progress
+- View gallery stops scroll functionality when modal is closed)
+- mobile ui issues for projects page (elements out of containers and All Projects cards is cutoff)
+
+### Update log
 
 2025-03-05 -- started creating portfolio, vision is complete, filling rough content
 
