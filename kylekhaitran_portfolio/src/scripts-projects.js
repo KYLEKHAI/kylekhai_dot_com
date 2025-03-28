@@ -206,6 +206,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeGalleryModal() {
     const modal = document.getElementById("gallery-modal");
     modal.classList.remove("active");
+    document.body.style.overflow = "auto";
   }
 
   // Create modal HTML
