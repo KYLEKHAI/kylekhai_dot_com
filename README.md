@@ -7,7 +7,6 @@
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
 
 ### Bugs in progress
-- View gallery stops scroll functionality when modal is closed)
 - mobile ui issues for projects page (elements out of containers and All Projects cards is cutoff)
 
 ### Update log
