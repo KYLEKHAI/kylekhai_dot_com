@@ -1,4 +1,4 @@
- # kylekhai_dot_com
+# kylekhai_dot_com
 
 ## `currently in progress...`
 
@@ -6,8 +6,17 @@
 
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
 
+### Tech Stack
+
+Made with:
+
+- HTML
+- CSS + TailwindCSS
+- Javascript
+
 ### Bugs in progress
-- mobile ui issues for projects page (elements out of containers and All Projects cards is cutoff)
+
+- mobile ui issues for projects page (elements out of containers)
 
 ### Update log
 
@@ -34,3 +43,7 @@ bonus easter egg
 ![2025-03-20-i](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-20-i.png)
 
 ![2025-03-20-ii](/kylekhaitran_portfolio/notes-trash/updates/read-me-update-2025-03-20-ii.png)
+
+```
+Thanks for reading!
+```
