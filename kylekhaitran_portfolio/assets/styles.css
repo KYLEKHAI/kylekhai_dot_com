@@ -1407,6 +1407,12 @@ body {
   margin-bottom: 20px;
 }
 
+@media (max-width: 1920px) and (min-width: 768px) {
+  .move-text {
+    display: none;
+  }
+}
+
 /* ABOUT ME */
 
 #real-time {
