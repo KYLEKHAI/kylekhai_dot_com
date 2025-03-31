@@ -14,7 +14,7 @@ Made with:
 - CSS + TailwindCSS
 - Javascript
 
-### Bugs in progress
+### Bugs in Progress
 
 - mobile ui issues for projects page (elements out of containers)
 
