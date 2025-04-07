@@ -15,6 +15,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Allows parallax effect on scroll
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".parallax-section");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("fade-in");
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+    section.classList.add("scroll-transition");
+  });
+});
+
 // Allows real-time to be displayed in about section
 function updateTime() {
   const now = new Date();

@@ -1285,6 +1285,18 @@
   font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "游ゴシック",
     "Yu Gothic", "YuGothic", sans-serif;
 }
+
+.scroll-transition {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* NAVIGATION */
 nav {
   display: flex;
