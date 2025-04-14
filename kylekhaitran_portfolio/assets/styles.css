@@ -1833,6 +1833,11 @@ body {
   height: 100%;
 }
 
+.current-project-work {
+  text-decoration: underline;
+  color: rgb(123, 245, 180);
+}
+
 /* FEATURED */
 .project-showcase {
   padding: 4rem 0;
