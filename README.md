@@ -1,7 +1,5 @@
 # kylekhai_dot_com
 
-## `currently in progress...`
-
 ### Site status: https://kylekhai-dot-com.vercel.app/
 
 ![Vercel Deploy](https://deploy-badge.vercel.app/vercel/kylekhai-dot-com?style=for-the-badge)
