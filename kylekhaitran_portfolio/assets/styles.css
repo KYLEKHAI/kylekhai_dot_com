@@ -1531,69 +1531,57 @@ body {
 
 .experience-items {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
   margin: 40px auto;
-  max-width: 900px;
+  max-width: 600px;
   position: relative;
 }
 
 .experience-items::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 2px;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
   background-color: var(--secondary);
   z-index: 0;
+  transform: translateX(-50%);
 }
 
 .experience-items::after {
   content: "";
   position: absolute;
-  top: 50%;
-  right: -40px;
-  height: 2px;
-  width: 30px;
+  bottom: -40px;
+  left: 50%;
+  width: 2px;
+  height: 40px;
   background-color: var(--secondary);
-  transform: translateY(-50%);
-  z-index: 2;
-}
-
-.experience-items::before:last-of-type {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: -40px;
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 12px solid var(--secondary);
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   z-index: 2;
 }
 
 .experience-container::after {
   content: "";
   position: absolute;
-  top: 50%;
-  right: calc(65% - 450px - 12px);
+  bottom: calc(2rem + 0px);
+  left: 50%;
   width: 0;
   height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 12px solid var(--secondary);
-  transform: translateY(-8px);
-  z-index: 2;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 12px solid var(--secondary);
+  transform: translateX(-50%);
+  z-index: 3;
 }
 
 .experience-item {
-  width: 28%;
-  min-width: 200px;
-  padding: 15px;
-  border-radius: 6px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
   background: var(--background);
   border: 1px solid var(--secondary);
   text-align: center;
@@ -1731,31 +1719,8 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .experience-items {
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-  }
-
-  .experience-items::before {
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    right: auto;
-    width: 2px;
-    height: 100%;
-  }
-
-  .experience-items::after {
-    display: none;
-  }
-
-  .experience-container::after {
-    display: none;
-  }
-
   .experience-item {
-    width: 80%;
+    width: 90%;
     max-width: 400px;
   }
 }
