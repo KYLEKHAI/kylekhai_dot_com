@@ -79,7 +79,14 @@ function copyEmail() {
 
 // Allows modal to be opened and closed for experience section
 function openModal(index) {
-  document.getElementById(`modal-${index}`).classList.add("active");
+  const modal = document.getElementById(`modal-${index}`);
+  if (!modal) return;
+
+  if (modal.parentElement !== document.body) {
+    document.body.appendChild(modal);
+  }
+
+  modal.classList.add("active");
   document.body.style.overflow = "hidden";
 }
 
