@@ -86,8 +86,12 @@ function openModal(index) {
     document.body.appendChild(modal);
   }
 
-  modal.classList.add("active");
-  document.body.style.overflow = "hidden";
+  modal.offsetHeight;
+
+  requestAnimationFrame(() => {
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
 }
 
 function closeModal(index) {
@@ -98,7 +102,14 @@ function closeModal(index) {
 document.addEventListener("click", function (event) {
   const modals = document.querySelectorAll(".experience-modal.active");
   modals.forEach((modal) => {
-    if (event.target === modal) {
+    // Check if click is on the modal overlay (background) and not on the content
+    const modalContent = modal.querySelector(".experience-modal-content");
+    if (
+      event.target === modal ||
+      (modalContent &&
+        !modalContent.contains(event.target) &&
+        modal.contains(event.target))
+    ) {
       modal.classList.remove("active");
       document.body.style.overflow = "auto";
     }

@@ -142,12 +142,12 @@
           </div>
         </div>
         <div class="text-foreground/70">
-          <p>
-            As of <span id="real-time"></span> I am working a Fall 2025
-            internship as a software developer and actively looking for new tech
-            opportunities for the Winter 2026 and Summer 2026 terms 👀.
-            Continuing my journey in tech, I hope to explore other fields and
-            hone my skills in development, testing and automation. (•ᴗ•)
+          <p style="margin-top: 1rem">
+            As of <span id="real-time"></span> I am working a Winter 2026
+            internship as an automation engineer and actively looking for new
+            tech opportunities for the Summer 2026 term 👀. Continuing my
+            journey in tech, I hope to explore other fields and hone my skills
+            in development, testing and automation. (•ᴗ•)
           </p>
           <br />
           <p>
@@ -193,26 +193,37 @@
           <div class="experience-items">
             <div class="experience-item" onclick="openModal(2)">
               <div class="experience-company">DOJ Canada</div>
-              <div class="experience-job">QA Tester (Web)</div>
+              <div class="experience-job">Software QA Engineer </div>
               <div class="experience-year">Jan 2024 - Apr 2024</div>
+              <div class="experience-location">Ottawa, ON, CA</div>
             </div>
 
             <div class="experience-item" onclick="openModal(1)">
               <div class="experience-company">ESDC</div>
               <div class="experience-job">Software Test Analyst</div>
               <div class="experience-year">May 2024 - Dec 2024</div>
+              <div class="experience-location">Ottawa, ON, CA</div>
             </div>
 
             <div class="experience-item" onclick="openModal(0)">
               <div class="experience-company">JSI Telecom</div>
-              <div class="experience-job">Software QA Tester</div>
+              <div class="experience-job">Software QA Engineer</div>
               <div class="experience-year">Jan 2025 - Apr 2025</div>
+              <div class="experience-location">Ottawa, ON, CA</div>
             </div>
 
             <div class="experience-item" onclick="openModal(3)">
               <div class="experience-company">Magnet Forensics</div>
-              <div class="experience-job">Software Developer</div>
-              <div class="experience-year">Sept 2025 - Present</div>
+              <div class="experience-job">Software Engineer</div>
+              <div class="experience-year">Sept 2025 - Dec 2025</div>
+              <div class="experience-location">Ottawa, ON, CA</div>
+            </div>
+
+            <div class="experience-item" onclick="openModal(4)">
+              <div class="experience-company">RBC</div>
+              <div class="experience-job">Automation Engineer</div>
+              <div class="experience-year">Jan 2026 - Present</div>
+              <div class="experience-location">Toronto, ON, CA</div>
             </div>
 
             <div class="experience-modal" id="modal-0">
@@ -220,7 +231,16 @@
                 <div class="modal-close" onclick="closeModal(0)"></div>
                 <div class="experience-content">
                   <div class="experience-date">January 2025 - April 2025</div>
-                  <h3>Software QA Tester @ JSI Telecom</h3>
+                  <h3>Software QA Engineer @ JSI Telecom</h3>
+                  <p class="experience-headline">
+                    Led QA on plugins for
+                    <a
+                      href="https://www.jsitelecom.com/"
+                      target="_blank"
+                      class="experience-link"
+                      >4Sight</a
+                    >
+                  </p>
                   <ul>
                     <li>
                       Designed and managed test cases in TestRail for
@@ -253,9 +273,19 @@
                 <div class="experience-content">
                   <div class="experience-date">May 2024 - December 2024</div>
                   <h3>
-                    Software Test Analyst & QA @ Employment and Social
-                    Development Canada
+                    Software Test Analyst @ Employment and Social Development
+                    Canada
                   </h3>
+                  <p class="experience-headline">
+                    Verified client applications and workflows for the
+                    <a
+                      href="https://www.canada.ca/en/employment-social-development/programs/benefits-delivery-modernization.html"
+                      target="_blank"
+                      class="experience-link"
+                      >Benefits Delivery Modernization (BDM)</a
+                    >
+                    program
+                  </p>
                   <ul>
                     <li>
                       Performed manual and automated testing for software
@@ -286,7 +316,19 @@
                 <div class="modal-close" onclick="closeModal(2)"></div>
                 <div class="experience-content">
                   <div class="experience-date">January 2024 - April 2024</div>
-                  <h3>QA Tester (Web) @ Department Of Justice Canada</h3>
+                  <h3>
+                    Software QA Engineer (Web) @ Department Of Justice Canada
+                  </h3>
+                  <p class="experience-headline">
+                    Tested websites for
+                    <a
+                      href="https://www.w3.org/WAI/standards-guidelines/wcag/"
+                      target="_blank"
+                      class="experience-link"
+                      >WCAG</a
+                    >
+                    accessibility compliance
+                  </p>
                   <ul>
                     <li>
                       Debugged code and documented errors using Azure DevOps
@@ -311,29 +353,69 @@
               <div class="experience-modal-content">
                 <div class="modal-close" onclick="closeModal(3)"></div>
                 <div class="experience-content">
-                  <div class="experience-date">September 2025 - Present</div>
+                  <div class="experience-date">
+                    September 2025 - December 2025
+                  </div>
                   <h3>Software Developer @ Magnet Forensics</h3>
+                  <p class="experience-headline">
+                    Developed features for
+                    <a
+                      href="https://www.magnetforensics.com/products/magnet-nexus/"
+                      target="_blank"
+                      class="experience-link"
+                      >Magnet Nexus</a
+                    >
+                    and
+                    <a
+                      href="https://www.magnetforensics.com/blog/introducing-the-new-magnet-nexus-hybrid-collection-agent/"
+                      target="_blank"
+                      class="experience-link"
+                      >Magnet Nexus hybrid agents</a
+                    >
+                  </p>
                   <ul>
                     <li>
-                      Contributed to the Agent Automation Team deploying C# .NET
-                      agents across client systems and AWS.
+                      Deployed C# .NET agents to AWS using S3 multipart uploads
+                      to improve data transfer performance.
                     </li>
                     <li>
-                      Implemented queuing and routing logic to optimize forensic
-                      data collection.
+                      Fixed bugs and maintained xUnit unit tests with logging
+                      and exception handling.
                     </li>
                     <li>
-                      Built and executed xUnit unit tests with logging and error
-                      handling for reliability.
+                      Developed Python and Jenkins CI/CD pipelines to automate
+                      deployments and validate ETL workflows.
                     </li>
                     <li>
-                      Developed PowerShell scripts to automate agent setup, API
-                      validation, and monitoring workflows.
+                      Built multi-OS endpoint frameworks for artifact collection
+                      across Windows, macOS, and Linux.
                     </li>
                     <li>
-                      Collaborated using Git, Jira and Azure DevOps for version
-                      control and team development.
+                      Optimized client-server interactions and API security
+                      using Docker and Charles Proxy for testing.
                     </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="experience-modal" id="modal-4">
+              <div class="experience-modal-content">
+                <div class="modal-close" onclick="closeModal(4)"></div>
+                <div class="experience-content">
+                  <div class="experience-date">January 2026 - Present</div>
+                  <h3>Automation Engineer @ RBC</h3>
+                  <p class="experience-headline">Automation for
+                    <a
+                      href="https://www.avionrewards.com/index.html"
+                      target="_blank"
+                      class="experience-link"
+                      >Avion Rewards</a
+                    >
+                    and internal GenAI Chatbot</p>
+                  <ul>
+                    <li>Current Winter 2026 role -- Details soon!</li>
+                    <li>Java, Python, TypeScript, Appium, Jenkins</li>
                   </ul>
                 </div>
               </div>
@@ -394,8 +476,11 @@
                 <li><span class="skill-bullet"></span>JUnit</li>
                 <li><span class="skill-bullet"></span>TestRail</li>
                 <li><span class="skill-bullet"></span>TestComplete</li>
+                <li><span class="skill-bullet"></span>TestNG</li>
+                <li><span class="skill-bullet"></span>Appium</li>
+                <li><span class="skill-bullet"></span>Swagger</li>
                 <li><span class="skill-bullet"></span>Debugging</li>
-                <li><span class="skill-bullet"></span>Documentation</li>
+                <li><span class="skill-bullet"></span>RestAssured</li>
                 <li><span class="skill-bullet"></span>Confluence</li>
                 <li><span class="skill-bullet"></span>Testing methods</li>
                 <li><span class="skill-bullet"></span>BDD & TDD</li>
@@ -431,6 +516,9 @@
                 <li><span class="skill-bullet"></span>C</li>
                 <li><span class="skill-bullet"></span>TypeScript</li>
                 <li><span class="skill-bullet"></span>HTML/CSS</li>
+                <li><span class="skill-bullet"></span>Groovy</li>
+                <li><span class="skill-bullet"></span>LangChain</li>
+                <li><span class="skill-bullet"></span>Next.js</li>
                 <li><span class="skill-bullet"></span>Spring Boot</li>
                 <li><span class="skill-bullet"></span>React</li>
                 <li><span class="skill-bullet"></span>Flutter</li>
@@ -461,7 +549,7 @@
                 <li><span class="skill-bullet"></span>Firebase</li>
                 <li><span class="skill-bullet"></span>Node.js</li>
                 <li><span class="skill-bullet"></span>Git</li>
-                <li><span class="skill-bullet"></span>Git Bash</li>
+                <li><span class="skill-bullet"></span>Bash</li>
                 <li><span class="skill-bullet"></span>Github</li>
                 <li><span class="skill-bullet"></span>Azure DevOps</li>
                 <li><span class="skill-bullet"></span>Jira</li>
@@ -469,11 +557,11 @@
                 <li><span class="skill-bullet"></span>Jenkins</li>
                 <li><span class="skill-bullet"></span>Android Studio</li>
                 <li><span class="skill-bullet"></span>MySQL/pgAdmin4</li>
-                <li><span class="skill-bullet"></span>Godot</li>
                 <li><span class="skill-bullet"></span>Figma</li>
                 <li><span class="skill-bullet"></span>Visual Studio/Code</li>
                 <li><span class="skill-bullet"></span>Powershell</li>
                 <li><span class="skill-bullet"></span>Windows/MacOS</li>
+                <li><span class="skill-bullet"></span>Linux</li>
               </ul>
             </div>
           </div>
@@ -487,6 +575,8 @@
               <span class="skill-tag">DevOps & Agile</span>
               <span class="skill-tag">Kanban</span>
               <span class="skill-tag">Web & Mobile</span>
+              <span class="skill-tag">Generative AI</span>
+              <span class="skill-tag">CI/CD</span>
             </div>
           </div>
 

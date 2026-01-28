@@ -1620,6 +1620,12 @@ body {
   margin-top: 5px;
 }
 
+.experience-location {
+  font-size: 0.75rem;
+  opacity: 0.6;
+  margin-top: 3px;
+}
+
 .experience-modal {
   position: fixed;
   top: 0;
@@ -1695,6 +1701,24 @@ body {
   font-weight: 500;
   color: var(--foreground);
   font-size: 1.2rem;
+}
+
+.experience-headline {
+  color: var(--foreground);
+  opacity: 0.9;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.experience-link {
+  color: var(--foreground);
+  text-decoration: underline;
+  transition: opacity 0.3s ease;
+}
+
+.experience-link:hover {
+  opacity: 0.7;
 }
 
 .experience-date {
