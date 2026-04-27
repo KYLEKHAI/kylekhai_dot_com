@@ -2,10 +2,12 @@
 @layer theme {
   :host,
   :root {
-    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    --font-sans:
+      ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
-      "Liberation Mono", "Courier New", monospace;
+    --font-mono:
+      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
     --color-gray-200: oklch(0.928 0.006 264.531);
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -725,7 +727,8 @@
   }
   .shadow-xs {
     --tw-shadow: 0 1px 2px 0 var(--tw-shadow-color, #0000000d);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
       var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .outline {
@@ -754,9 +757,10 @@
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-colors {
-    transition-property: color, background-color, border-color, outline-color,
-      text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via,
-      --tw-gradient-to;
+    transition-property:
+      color, background-color, border-color, outline-color,
+      text-decoration-color, fill, stroke, --tw-gradient-from,
+      --tw-gradient-via, --tw-gradient-to;
     transition-timing-function: var(
       --tw-ease,
       var(--default-transition-timing-function)
@@ -779,13 +783,13 @@
     animation-duration: 0.3s;
   }
   .group-data-\[disabled\=true\]\:pointer-events-none:is(
-      :where(.group)[data-disabled="true"] *
-    ) {
+    :where(.group)[data-disabled="true"] *
+  ) {
     pointer-events: none;
   }
   .group-data-\[disabled\=true\]\:opacity-50:is(
-      :where(.group)[data-disabled="true"] *
-    ) {
+    :where(.group)[data-disabled="true"] *
+  ) {
     opacity: 0.5;
   }
   .group-\[\.toast\]\:bg-muted:is(:where(.group).toast *) {
@@ -810,9 +814,11 @@
     color: var(--foreground);
   }
   .group-\[\.toaster\]\:shadow-lg:is(:where(.group).toaster *) {
-    --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, #0000001a),
+    --tw-shadow:
+      0 10px 15px -3px var(--tw-shadow-color, #0000001a),
       0 4px 6px -4px var(--tw-shadow-color, #0000001a);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
       var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .peer-disabled\:cursor-not-allowed:is(:where(.peer):disabled ~ *) {
@@ -933,7 +939,8 @@
   .focus-visible\:ring-\[0px\]:focus-visible {
     --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
       calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
-    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    box-shadow:
+      var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
       var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
   }
   .focus-visible\:ring-destructive\/20:focus-visible {
@@ -1282,14 +1289,17 @@
 
 /* OTHER */
 * {
-  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "游ゴシック",
-    "Yu Gothic", "YuGothic", sans-serif;
+  font-family:
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", "游ゴシック", "Yu Gothic",
+    "YuGothic", sans-serif;
 }
 
 .scroll-transition {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
 }
 
 .fade-in {
@@ -1354,7 +1364,9 @@ body {
 
 .resume-link {
   position: relative;
-  transition: transform 0.3s ease, background-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease;
 }
 
 .resume-link:hover {
@@ -1848,7 +1860,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
   backdrop-filter: blur(8px);
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
 }
 
 .showcase-project:hover {
@@ -1930,7 +1944,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 0.5rem;
   overflow: hidden;
-  transition: transform 0.3s ease, border-color 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -2007,7 +2023,9 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
   color: rgba(255, 255, 255, 0.8);
   text-decoration: none;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
   font-size: 0.875rem;
 }
 
