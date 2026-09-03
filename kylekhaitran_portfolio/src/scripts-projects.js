@@ -159,9 +159,112 @@ document.addEventListener("DOMContentLoaded", function () {
       "assets/imgs/project-imgs/outtatown-img1.png",
       "assets/imgs/project-imgs/outtatown-img2.png",
     ],
+    vgmu: [
+      "assets/imgs/project-imgs/vgmu/vgmu-logo.png",
+      "assets/imgs/project-imgs/vgmu/album-artwork-gallery.jpg",
+      "assets/imgs/project-imgs/vgmu/album-artwork-save-sheet.jpg",
+      "assets/imgs/project-imgs/vgmu/album-information-octopath.jpg",
+      "assets/imgs/project-imgs/vgmu/album-mario-kart-wii.jpg",
+      "assets/imgs/project-imgs/vgmu/album-persona-5-royal.jpg",
+      "assets/imgs/project-imgs/vgmu/browse-top-100.jpg",
+      "assets/imgs/project-imgs/vgmu/discord-rp-atlus-sega.png",
+      "assets/imgs/project-imgs/vgmu/discord-rp-nintendo.png",
+      "assets/imgs/project-imgs/vgmu/downloads-active-queue.jpg",
+      "assets/imgs/project-imgs/vgmu/downloads-batch-remaining.jpg",
+      "assets/imgs/project-imgs/vgmu/downloads-cancel-modal.jpg",
+      "assets/imgs/project-imgs/vgmu/downloads-confirm-modal.jpg",
+      "assets/imgs/project-imgs/vgmu/downloads-history-detail.jpg",
+      "assets/imgs/project-imgs/vgmu/home-most-favorites.jpg",
+      "assets/imgs/project-imgs/vgmu/library-add-to-playlist.jpg",
+      "assets/imgs/project-imgs/vgmu/library-add-tracks-picker.jpg",
+      "assets/imgs/project-imgs/vgmu/library-collection-options.jpg",
+      "assets/imgs/project-imgs/vgmu/library-create-playlist.jpg",
+      "assets/imgs/project-imgs/vgmu/library-folder-view.jpg",
+      "assets/imgs/project-imgs/vgmu/library-importing-progress.jpg",
+      "assets/imgs/project-imgs/vgmu/library-local-import-picker.jpg",
+      "assets/imgs/project-imgs/vgmu/library-offline-collection-options.jpg",
+      "assets/imgs/project-imgs/vgmu/library-offline-track-list.jpg",
+      "assets/imgs/project-imgs/vgmu/library-overview.jpg",
+      "assets/imgs/project-imgs/vgmu/library-playlist-tracks.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-lock-screen-full.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-lock-screen-widget.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-now-playing-diva.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-now-playing-kirby.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-now-playing-square-enix-cry.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-now-playing-tomodachi.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-queue.jpg",
+      "assets/imgs/project-imgs/vgmu/playback-swipe-next-track.jpg",
+      "assets/imgs/project-imgs/vgmu/search-donkey-kong.jpg",
+      "assets/imgs/project-imgs/vgmu/search-stardew-valley.jpg",
+      "assets/imgs/project-imgs/vgmu/settings-about.jpg",
+      "assets/imgs/project-imgs/vgmu/settings-download-quality.jpg",
+      "assets/imgs/project-imgs/vgmu/settings-help.jpg",
+      "assets/imgs/project-imgs/vgmu/settings-ios-icon-customize.jpg",
+      "assets/imgs/project-imgs/vgmu/settings-storage-discord-rp.jpg",
+      "assets/imgs/project-imgs/vgmu/settings-theme-discord-gaming.jpg",
+      "assets/imgs/project-imgs/vgmu/settings-theme-kawaii-pink.jpg",
+      "assets/imgs/project-imgs/vgmu/welcome-screen.png",
+    ],
+    custos: [
+      "assets/imgs/project-imgs/custos-1.jpg",
+      "assets/imgs/project-imgs/custos-2.jpg",
+      "assets/imgs/project-imgs/custos-3.jpg",
+      "assets/imgs/project-imgs/custos-4.jpg",
+      "assets/imgs/project-imgs/custos-5.jpg",
+      "assets/imgs/project-imgs/custos-6.jpg",
+      "assets/imgs/project-imgs/custos-7.jpg",
+      "assets/imgs/project-imgs/custos-8.jpg",
+      "assets/imgs/project-imgs/hackthesix-image.jpg",
+      "assets/imgs/project-imgs/hackthesix-logo.png",
+    ],
+    whatTheTech: [
+      "assets/imgs/project-imgs/wtt-main.gif",
+      "assets/imgs/project-imgs/wtt-1.jpg",
+      "assets/imgs/project-imgs/wtt-2.jpg",
+      "assets/imgs/project-imgs/wtt-3.jpg",
+      "assets/imgs/project-imgs/wtt-4.jpg",
+      "assets/imgs/project-imgs/wtt-5.jpg",
+      "assets/imgs/project-imgs/wtt-6.jpg",
+      "assets/imgs/project-imgs/wtt-7.jpg",
+      "assets/imgs/project-imgs/wtt-8.jpg",
+      "assets/imgs/project-imgs/wtt-9.jpg",
+      "assets/imgs/project-imgs/wtt-10.jpg",
+      "assets/imgs/project-imgs/wtt-11.jpg",
+      "assets/imgs/project-imgs/wtt-12.jpg",
+      "assets/imgs/project-imgs/wtt-13.jpg",
+      "assets/imgs/project-imgs/wtt-14.jpg",
+      "assets/imgs/project-imgs/uottahack8.png",
+    ],
   };
 
   // Allows gallery modal to open and close
+  let galleryThumbnailObserver = null;
+
+  function hydrateGalleryThumbnail(image) {
+    if (!image || image.src || !image.dataset.src) return;
+
+    image.src = image.dataset.src;
+    delete image.dataset.src;
+  }
+
+  function getGalleryThumbnailSource(imageSrc) {
+    const projectImagesDirectory = "assets/imgs/project-imgs/";
+
+    if (!imageSrc.startsWith(projectImagesDirectory)) {
+      return imageSrc;
+    }
+
+    const imageName = imageSrc
+      .slice(projectImagesDirectory.length)
+      .split("/")
+      .pop();
+    const extensionIndex = imageName.lastIndexOf(".");
+
+    if (extensionIndex === -1) return imageSrc;
+
+    return `assets/imgs/optimized/gallery-thumbs/${imageName.slice(0, extensionIndex)}.webp`;
+  }
+
   function openGalleryModal(project) {
     const modal = document.getElementById("gallery-modal");
     modal.classList.add("active");
@@ -170,32 +273,74 @@ document.addEventListener("DOMContentLoaded", function () {
     const thumbnailsContainer = modal.querySelector(".gallery-thumbnails");
     const mainImage = modal.querySelector(".gallery-main-image");
 
+    galleryThumbnailObserver?.disconnect();
+    galleryThumbnailObserver = null;
+
     const images = projectGalleries[project] || [];
 
     if (images.length > 0) {
       mainImage.src = images[0];
+      mainImage.alt = `${project} gallery image 1`;
     }
+    mainImage.loading = "eager";
+    mainImage.decoding = "async";
 
     thumbnailsContainer.innerHTML = "";
+    const thumbnailFragment = document.createDocumentFragment();
+    const lazyThumbnailImages = [];
+
+    if (typeof IntersectionObserver === "function") {
+      galleryThumbnailObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            hydrateGalleryThumbnail(entry.target);
+            observer.unobserve(entry.target);
+          });
+        },
+        {
+          root: null,
+          rootMargin: "100px",
+        },
+      );
+    }
 
     images.forEach((imageSrc, index) => {
       const thumbnail = document.createElement("div");
       thumbnail.classList.add("gallery-thumbnail");
 
       const img = document.createElement("img");
-      img.src = imageSrc;
-      img.addEventListener("click", () => {
+      img.dataset.src = getGalleryThumbnailSource(imageSrc);
+      img.alt = `${project} gallery thumbnail ${index + 1}`;
+      img.loading = "lazy";
+      img.decoding = "async";
+
+      thumbnail.addEventListener("click", () => {
+        hydrateGalleryThumbnail(img);
         mainImage.src = imageSrc;
+        mainImage.alt = `${project} gallery image ${index + 1}`;
 
         thumbnailsContainer
-          .querySelectorAll(".gallery-thumbnail")
-          .forEach((t) => t.classList.remove("active"));
+          .querySelector(".gallery-thumbnail.active")
+          ?.classList.remove("active");
 
         thumbnail.classList.add("active");
       });
 
       thumbnail.appendChild(img);
-      thumbnailsContainer.appendChild(thumbnail);
+      thumbnailFragment.appendChild(thumbnail);
+
+      if (index < 5) {
+        hydrateGalleryThumbnail(img);
+      } else if (galleryThumbnailObserver) {
+        lazyThumbnailImages.push(img);
+      }
+    });
+
+    thumbnailsContainer.appendChild(thumbnailFragment);
+    lazyThumbnailImages.forEach((image) => {
+      galleryThumbnailObserver?.observe(image);
     });
 
     if (thumbnailsContainer.firstChild) {
@@ -207,6 +352,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const modal = document.getElementById("gallery-modal");
     modal.classList.remove("active");
     document.body.style.overflow = "auto";
+    galleryThumbnailObserver?.disconnect();
+    galleryThumbnailObserver = null;
   }
 
   // Create modal HTML
@@ -237,6 +384,27 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", (e) => {
       e.preventDefault();
       openGalleryModal("outtatown");
+    });
+
+  document
+    .getElementById("vgmu-gallery-id")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+      openGalleryModal("vgmu");
+    });
+
+  document
+    .getElementById("custos-gallery-id")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+      openGalleryModal("custos");
+    });
+
+  document
+    .getElementById("what-the-tech-gallery-id")
+    .addEventListener("click", (e) => {
+      e.preventDefault();
+      openGalleryModal("whatTheTech");
     });
 
   const modalCloseButton = document.querySelector(".modal-close");

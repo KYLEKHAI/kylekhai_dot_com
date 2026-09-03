@@ -40,11 +40,16 @@ document.addEventListener("DOMContentLoaded", function () {
 function updateTime() {
   const now = new Date();
   const formattedTime = now.toLocaleString();
-  document.getElementById("real-time").textContent = formattedTime;
+  const realTimeElement = document.getElementById("real-time");
+  if (!realTimeElement) return;
+
+  realTimeElement.textContent = formattedTime;
 }
 
 updateTime();
-setInterval(updateTime, 1000);
+if (document.getElementById("real-time")) {
+  setInterval(updateTime, 1000);
+}
 
 // Allows email to be copied and notification to appear
 function copyEmail() {

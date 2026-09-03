@@ -11,7 +11,6 @@
     <style>
       /* Parallax scrolling effect */
       .parallax-section {
-        background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -72,6 +71,27 @@
         </div>
       </div>
     </div>
+
+    <!-- TL;DR -->
+    <section class="tldr-section" aria-labelledby="tldr-title">
+      <div class="tldr-card">
+        <div class="tldr-copy">
+          <h2 id="tldr-title" class="tldr-title">TL;DR</h2>
+          <p class="tldr-description">
+            i don't have time for this! read my quick summary here:
+          </p>
+        </div>
+        <a
+          class="tldr-link"
+          href="https://kkt-mini-bytes.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span>mini portfolio</span>
+          <span class="tldr-link-arrow" aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
 
     <!-- Hero Section -->
     <div
@@ -135,6 +155,7 @@
             </h3>
             <ul class="list-disc pl-5 space-y-2">
               <li>Software development and testing</li>
+              <li>Cyber security and software threats</li>
               <li>Automation technologies and LLMs</li>
               <li>Web3 & Blockchain infrastructure</li>
               <li>Third-Party software & tools created by communities!</li>
@@ -470,7 +491,7 @@
                     Inc. (AMD)
                   </h3>
                   <p class="experience-headline">
-                    Incoming Summer 2026 - Display Team
+                    Incoming Summer 2026 - Display &amp; Multi-Media Team
                   </p>
                   <ul>
                     <li>Details soon!</li>
@@ -572,10 +593,10 @@
                 <li><span class="skill-bullet"></span>JavaScript</li>
                 <li><span class="skill-bullet"></span>SQL/PostgreSQL</li>
                 <li><span class="skill-bullet"></span>C</li>
+                <li><span class="skill-bullet"></span>C++</li>
                 <li><span class="skill-bullet"></span>TypeScript</li>
                 <li><span class="skill-bullet"></span>HTML/CSS</li>
                 <li><span class="skill-bullet"></span>Groovy</li>
-                <li><span class="skill-bullet"></span>LangChain</li>
                 <li><span class="skill-bullet"></span>Next.js</li>
                 <li><span class="skill-bullet"></span>Spring Boot</li>
                 <li><span class="skill-bullet"></span>React</li>
@@ -681,8 +702,10 @@
               <div class="flex justify-center">
                 <a href="https://github.com/KYLEKHAI" target="_blank">
                   <img
-                    src="https://github-readme-stats.vercel.app/api?username=KYLEKHAI&show_icons=true&theme=catppuccin_mocha"
+                    src="https://github-stats-extended.vercel.app/api?username=KYLEKHAI&show_icons=true&theme=catppuccin_mocha"
                     alt="GitHub Stats"
+                    loading="lazy"
+                    decoding="async"
                     class="max-w-full h-auto rounded"
                   />
                 </a>
@@ -705,6 +728,8 @@
                   <img
                     src="https://leetcard.jacoblin.cool/kylekhai?theme=catppuccinMocha&font=Basic&ext=heatmap"
                     alt="LeetCode Stats"
+                    loading="lazy"
+                    decoding="async"
                     class="max-w-full h-auto rounded"
                   />
                 </a>
@@ -868,6 +893,8 @@
           width="60"
           height="50"
           alt="Bongo Cat"
+          loading="lazy"
+          decoding="async"
         />
       </div>
     </div>
